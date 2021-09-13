@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="defineBean" class="com.jehon.definition.DefineBean">
+        <property name="message1" value="Hello Bean!"/>
+        <property name="message2" value="Hello Bean!"/>
+    </bean>
+
+    <bean id="defineIndia" class="com.jehon.definition.DefineIndia" parent="defineBean">
+        <property name="message1" value="Hello DefineIndia!"/>
+        <property name="message3" value="Namaste DefineIndia!"/>
+    </bean>
+</beans>
