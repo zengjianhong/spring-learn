@@ -1,22 +1,15 @@
-package com.jehon;
+package com.jehon.main2;
 
-import com.jehon.definition.DefineBean;
-import com.jehon.definition.DefineIndia;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.TreeMap;
-import java.util.TreeSet;
 
 /**
  * @author jehon
  */
-public class MainApp2 {
+public class MainApp {
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("main2.xml");
 
         DefineBean defineBean = (DefineBean) applicationContext.getBean("defineBean");
         defineBean.getMessage1();

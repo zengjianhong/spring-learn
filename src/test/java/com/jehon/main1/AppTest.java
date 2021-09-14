@@ -1,4 +1,4 @@
-package com.jehon.app;
+package com.jehon.main1;
 
 import static org.junit.Assert.assertTrue;
 

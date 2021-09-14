@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    <bean id="textEditor" class="com.jehon.main3.TextEditor">-->
+<!--        <constructor-arg ref="spellChecker"/>-->
+<!--    </bean>-->
+<!--    <bean id="spellChecker" class="com.jehon.main3.SpellChecker">-->
+<!--        <constructor-arg index="0" value="text"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="textEditor2" class="com.jehon.main3.TextEditor"-->
+<!--          p:spellChecker-ref="spellChecker">-->
+<!--        &lt;!&ndash;        <property name="spellChecker" ref="spellChecker"/>&ndash;&gt;-->
+<!--    </bean>-->
+
+    <bean id="textEditor3" class="com.jehon.main3.TextEditor">
+        <property name="spellChecker">
+            <bean id="spellChecker" class="com.jehon.main3.SpellChecker"/>
+        </property>
+    </bean>
+</beans>

@@ -1,4 +1,4 @@
-package com.jehon.init;
+package com.jehon.main1;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

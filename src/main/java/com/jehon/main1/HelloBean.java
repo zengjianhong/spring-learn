@@ -1,4 +1,4 @@
-package com.jehon.init;
+package com.jehon.main1;
 
 import lombok.Data;
 import org.springframework.beans.factory.InitializingBean;
@@ -12,10 +12,10 @@ public class HelloBean {
     private String name;
 
     public void init() {
-        System.out.println("com.jehon.init.HelloBean.init");
+        System.out.println("com.jehon.main1.HelloBean.init");
     }
 
     public void destroy() {
-        System.out.println("com.jehon.init.HelloBean.destroy");
+        System.out.println("com.jehon.main1.HelloBean.destroy");
     }
 }

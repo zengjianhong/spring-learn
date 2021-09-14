@@ -1,4 +1,4 @@
-package com.jehon.definition;
+package com.jehon.main2;
 
 import lombok.Data;
 

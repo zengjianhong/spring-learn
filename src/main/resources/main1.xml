@@ -4,17 +4,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
         default-init-method="init"
         default-destroy-method="destroy">
-    <bean id="helloworld" class="com.jehon.app.HelloWorld" scope="prototype">
+    <bean id="helloworld" class="com.jehon.main1.HelloWorld" scope="prototype">
         <property name="message" value="hello world!"/>
     </bean>
     <!--singleton：容器初始化时加载类对象
     prototype: 调用时加载创建对象-->
     <!--<bean id="exampleBean" class="com.jehon.ExampleBean" scope="singleton" init-method="init" destroy-method="destroy">
     </bean>-->
-    <bean id="exampleBean" class="com.jehon.app.ExampleBean" scope="singleton">
+    <bean id="exampleBean" class="com.jehon.main1.ExampleBean" scope="singleton">
     </bean>
-    <bean id="helloBean" class="com.jehon.init.HelloBean">
+    <bean id="helloBean" class="com.jehon.main1.HelloBean">
         <property name="name" value="hello name!"/>
     </bean>
-    <bean id="InitHello" class="com.jehon.init.InitHello"></bean>
+    <bean id="InitHello" class="com.jehon.main1.InitHello"></bean>
 </beans>

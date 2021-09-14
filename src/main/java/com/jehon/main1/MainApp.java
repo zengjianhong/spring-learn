@@ -1,8 +1,5 @@
-package com.jehon;
+package com.jehon.main1;
 
-import com.jehon.app.ExampleBean;
-import com.jehon.app.HelloWorld;
-import com.jehon.init.HelloBean;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -12,10 +9,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MainApp {
     public static void main( String[] args ) {
-//        XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("application.xml"));
-//        ApplicationContext applicationContext = new FileSystemXmlApplicationContext("D:\\Virog_Idea\\spring_learn\\src\\main\\resources\\application.xml");
-//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application.xml");
-        AbstractApplicationContext applicationContext = new ClassPathXmlApplicationContext("application.xml"); // applicationContext.registerShutdownHook();
+//        XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("main1.xml"));
+//        ApplicationContext applicationContext = new FileSystemXmlApplicationContext("D:\\Virog_Idea\\spring_learn\\src\\main\\resources\\main1.xml");
+//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("main1.xml");
+        AbstractApplicationContext applicationContext = new ClassPathXmlApplicationContext("main1.xml"); // applicationContext.registerShutdownHook();
 
         HelloWorld helloWorld = (HelloWorld) applicationContext.getBean("helloworld");
         helloWorld.setMessage("hello");
