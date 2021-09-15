@@ -1,6 +1,5 @@
-package com.jehon.main3;
+package com.jehon._3di;
 
-import org.omg.CORBA.portable.ApplicationException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -10,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainApp {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("main3.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans3.xml");
 //        TextEditor textEditor = (TextEditor) context.getBean("textEditor");
 //        textEditor.spellCheck();
 

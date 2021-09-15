@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    要把带参数的构造函数注销掉-->
+<!--    <bean id="textEditor" class="com.jehon._4autowire.TextEditor">-->
+<!--        <property name="spellChecker" ref="spellChecker"/>-->
+<!--        <property name="name" value="Generic Text Editor"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="textEditor" class="com.jehon._4autowire.TextEditor" autowire="byName">-->
+<!--        <property name="name" value="Generic Text Editor"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="textEditor" class="com.jehon._4autowire.TextEditor" autowire="byType">-->
+<!--        <property name="name" value="Generic Text Editor"/>-->
+<!--    </bean>-->
+
+<!--    带参数的构造函数装配-->
+<!--    <bean id="textEditor" class="com.jehon._4autowire.TextEditor">-->
+<!--        <constructor-arg ref="spellChecker"/>-->
+<!--        <constructor-arg value="Generic Text Editor"/>-->
+<!--    </bean>-->
+    <bean id="textEditor" class="com.jehon._4autowire.TextEditor" autowire="constructor">
+        <constructor-arg value="Generic Text Editor"/>
+    </bean>
+    <bean id="spellChecker" class="com.jehon._4autowire.SpellChecker"></bean>
+</beans>

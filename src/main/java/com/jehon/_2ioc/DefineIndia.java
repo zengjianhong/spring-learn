@@ -1,4 +1,4 @@
-package com.jehon.main2;
+package com.jehon._2ioc;
 
 import lombok.Data;
 

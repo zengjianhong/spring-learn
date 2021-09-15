@@ -1,16 +1,9 @@
-package com.jehon.main3;
+package com.jehon._4autowire;
 
 /**
  * @author jehon
  */
 public class SpellChecker {
-
-//    private String spell;
-
-//    public SpellChecker(String spell) {
-//        System.out.println("Inside SpellChecker constructor.");
-//        this.spell = spell;
-//    }
 
     public SpellChecker() {
         System.out.println("Inside SpellChecker constructor.");

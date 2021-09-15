@@ -2,12 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="defineBean" class="com.jehon.main2.DefineBean">
+    <bean id="defineBean" class="com.jehon._2ioc.DefineBean">
         <property name="message1" value="Hello Bean!"/>
         <property name="message2" value="Hello Bean!"/>
     </bean>
 
-    <bean id="defineIndia" class="com.jehon.main2.DefineIndia" parent="defineBean">
+    <bean id="defineIndia" class="com.jehon._2ioc.DefineIndia" parent="defineBean">
         <property name="message1" value="Hello DefineIndia!"/>
         <property name="message3" value="Namaste DefineIndia!"/>
     </bean>

@@ -15,9 +15,9 @@
 <!--        &lt;!&ndash;        <property name="spellChecker" ref="spellChecker"/>&ndash;&gt;-->
 <!--    </bean>-->
 
-    <bean id="textEditor3" class="com.jehon.main3.TextEditor">
+    <bean id="textEditor3" class="com.jehon._3di.TextEditor">
         <property name="spellChecker">
-            <bean id="spellChecker" class="com.jehon.main3.SpellChecker"/>
+            <bean id="spellChecker" class="com.jehon._3di.SpellChecker"/>
         </property>
     </bean>
 </beans>

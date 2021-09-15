@@ -1,4 +1,4 @@
-package com.jehon.main3;
+package com.jehon._4autowire;
 
 /**
  * @author jehon
@@ -6,19 +6,27 @@ package com.jehon.main3;
 public class TextEditor {
 
     private SpellChecker spellChecker;
+    private String name;
 
-//    public TextEditor(SpellChecker spellChecker) {
-//        System.out.println("Inside TextEditor constructor.");
-//        this.spellChecker = spellChecker;
-//    }
+    public TextEditor(SpellChecker spellChecker, String name) {
+        this.spellChecker = spellChecker;
+        this.name = name;
+    }
 
     public void setSpellChecker(SpellChecker spellChecker) {
-        System.out.println("Inside setSpellChecker.");
         this.spellChecker = spellChecker;
     }
 
     public SpellChecker getSpellChecker() {
         return spellChecker;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void spellCheck() {

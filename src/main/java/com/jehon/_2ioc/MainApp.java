@@ -1,4 +1,4 @@
-package com.jehon.main2;
+package com.jehon._2ioc;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainApp {
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("main2.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans2.xml");
 
         DefineBean defineBean = (DefineBean) applicationContext.getBean("defineBean");
         defineBean.getMessage1();

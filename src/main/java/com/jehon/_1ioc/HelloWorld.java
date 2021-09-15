@@ -1,4 +1,4 @@
-package com.jehon.main1;
+package com.jehon._1ioc;
 
 import lombok.Data;
 import org.springframework.beans.factory.InitializingBean;
