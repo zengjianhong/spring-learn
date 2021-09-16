@@ -7,15 +7,8 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     <context:annotation-config />
-    <bean id="student1" class="com.jehon._5annotation.Student">
-        <property name="name" value="Zare" />
-        <property name="age" value="11"/>
-    </bean>
 
-    <bean id="student2" class="com.jehon._5annotation.Student">
-        <property name="name" value="Nuha" />
-        <property name="age" value="2"/>
+    <bean id="helloWorld" class="com.jehon._6jsr_250.HelloWorld" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello World!"/>
     </bean>
-
-    <bean id="profile" class="com.jehon._5annotation.Profile"></bean>
 </beans>

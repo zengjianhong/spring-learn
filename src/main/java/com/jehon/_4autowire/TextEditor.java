@@ -1,5 +1,7 @@
 package com.jehon._4autowire;
 
+import javax.annotation.Resource;
+
 /**
  * @author jehon
  */
@@ -13,6 +15,7 @@ public class TextEditor {
         this.name = name;
     }
 
+    @Resource
     public void setSpellChecker(SpellChecker spellChecker) {
         this.spellChecker = spellChecker;
     }
