@@ -1,7 +1,5 @@
 package com.jehon._7config;
 
-import javax.annotation.PreDestroy;
-
 /**
  * @author jehon
  */
